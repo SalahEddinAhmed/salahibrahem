@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#888282"
+    tools:context=".MainActivity5">
+
+    <EditText
+        android:id="@+id/year2"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="421dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="السنة"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/year1" />
+
+    <EditText
+        android:id="@+id/day1"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="اليوم"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/day2"
+        app:layout_constraintStart_toEndOf="@+id/month1"
+        app:layout_constraintTop_toTopOf="@+id/month1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/day2"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="اليوم"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/month2"
+        app:layout_constraintStart_toEndOf="@+id/month2"
+        app:layout_constraintTop_toBottomOf="@+id/month1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/name1"
+        android:layout_width="85dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:hint="الاسم الاول"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/day1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/day1" />
+
+    <EditText
+        android:id="@+id/name2"
+        android:layout_width="85dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:hint="الاسم الثاني"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/day2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toEndOf="@+id/day2" />
+
+    <TextView
+        android:id="@+id/avar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="سيظر الفرق هنا :  "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/back"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/year1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="114dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="100dp"
+        android:text="قارن"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avar"
+        app:layout_constraintVertical_bias="0.991" />
+
+    <EditText
+        android:id="@+id/month2"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="الشهر"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/year2"
+        app:layout_constraintStart_toEndOf="@+id/year2"
+        app:layout_constraintTop_toBottomOf="@+id/year1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/month1"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="الشهر"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/month2"
+        app:layout_constraintStart_toEndOf="@+id/year1"
+        app:layout_constraintTop_toTopOf="@+id/year1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/year1"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="السنة"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/year2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
